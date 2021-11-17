@@ -1,6 +1,7 @@
 import { Flex, Img, useColorMode } from "@chakra-ui/react";
 import dynamic from "next/dynamic";
 import ChakraNextLink from "../chakraNextLink";
+import NextImage from "next/image";
 
 function FooterNavbar() {
   const { colorMode } = useColorMode();
@@ -11,7 +12,7 @@ function FooterNavbar() {
       justifyContent="flex-end"
       bg={colorMode === "light" ? "white" : "gray.900"}
       px={3}
-      pb={3}
+      pb={1}
       gridGap={2}
       align="center"
       minH="6vh"
@@ -27,18 +28,18 @@ function FooterNavbar() {
       <ChakraNextLink to="/about">About</ChakraNextLink>
       <ChakraNextLink to="https://github.com/erinmhpark">
         {colorMode === "light" ? (
-          <Img
+          <NextImage
             src="/githubLight.png"
             alt="Github logo"
-            boxSize="18px"
-            cursor="pointer"
+            width="20px"
+            height="20px"
           />
         ) : (
-          <Img
+          <NextImage
             src="/githubDark.png"
             alt="Github logo"
-            boxSize="18px"
-            cursor="pointer"
+            width="20px"
+            height="20px"
           />
         )}
       </ChakraNextLink>

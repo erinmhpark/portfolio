@@ -1,6 +1,7 @@
 import { Flex, Img, useColorMode } from "@chakra-ui/react";
 import dynamic from "next/dynamic";
 import ChakraNextLink from "../chakraNextLink";
+import NextImage from "next/image";
 
 function HeaderNavbar() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -18,18 +19,18 @@ function HeaderNavbar() {
       <ChakraNextLink to="/about">About</ChakraNextLink>
       <ChakraNextLink to="https://github.com/erinmhpark">
         {colorMode === "light" ? (
-          <Img
+          <NextImage
             src="/githubLight.png"
             alt="Github logo"
-            boxSize="22px"
-            cursor="pointer"
+            width="20px"
+            height="20px"
           />
         ) : (
-          <Img
+          <NextImage
             src="/githubDark.png"
             alt="Github logo"
-            boxSize="22px"
-            cursor="pointer"
+            width="20px"
+            height="20px"
           />
         )}
       </ChakraNextLink>

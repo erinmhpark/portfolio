@@ -44,8 +44,8 @@ function Cv() {
       </Flex>
 
       {/* CV Body */}
-      <Flex gridGap={14}>
-        <Text fontSize="0.85em" color={darkGray}>
+      <Flex gridGap={10}>
+        <Text fontSize="0.85em" color={darkGray} noWrap>
           Jan 2018 - Present
         </Text>
         <Flex direction="column">

@@ -12,7 +12,7 @@ function Cv() {
   const darkGray = useColorModeValue("gray.700", "gray.500");
 
   return (
-    <Flex direction="column" gridGap={8} px={36}>
+    <Flex direction="column" gridGap={8} px={{ base: "4", md: "36" }}>
       {/* CV Header */}
       <Flex align="center" gridGap={2}>
         <Image

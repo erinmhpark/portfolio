@@ -11,6 +11,7 @@ function FooterNavbar() {
       justifyContent="flex-end"
       bg={colorMode === "light" ? "white" : "gray.900"}
       px={3}
+      pb={3}
       gridGap={2}
       align="center"
       minH="6vh"
@@ -29,14 +30,14 @@ function FooterNavbar() {
           <Img
             src="/githubLight.png"
             alt="Github logo"
-            boxSize="22px"
+            boxSize="18px"
             cursor="pointer"
           />
         ) : (
           <Img
             src="/githubDark.png"
             alt="Github logo"
-            boxSize="22px"
+            boxSize="18px"
             cursor="pointer"
           />
         )}

@@ -8,7 +8,7 @@ function ChakraNextLink(props) {
   const isActive = router.pathname === to;
   return (
     <NextLink passHref href={to}>
-      <ChakraLink fontSize="0.85em" fontWeight={isActive && "bold"}>
+      <ChakraLink fontSize="0.85em" borderBottom={isActive ? "1px" : "none"}>
         {children}
       </ChakraLink>
     </NextLink>

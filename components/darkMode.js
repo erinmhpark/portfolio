@@ -11,6 +11,7 @@ function DarkMode() {
         aria-label="Change theme"
         variant="ghost"
         color="gray.500"
+        size="sm"
       />
     </div>
   );

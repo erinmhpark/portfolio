@@ -33,7 +33,7 @@ function Cv() {
 
       {/* CV Subheading */}
       <Flex direction="column" gridGap={2}>
-        <Text>About</Text>
+        <Text fontSize="0.9em">About</Text>
         <Text color={darkGray} fontSize="0.85em">
           Executive Business Development with 8 years of experience specializing
           in investing, consulting, and project management. Built career in tech
@@ -44,6 +44,7 @@ function Cv() {
       </Flex>
 
       {/* CV Body */}
+      <Text fontSize="0.9em">Professional Experience</Text>
       <Flex gridGap={10}>
         <Text fontSize="0.85em" color={darkGray} noWrap>
           Jan 2018 - Present
